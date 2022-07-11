@@ -1,3 +1,3 @@
 export const api = {
-    url: "http://localhost:1000"
+    url: "https://erode.herokuapp.com"
 }
