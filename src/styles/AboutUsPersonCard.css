@@ -1,0 +1,42 @@
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 3% 5%;
+    width: 279px;
+}
+
+.person-card>img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.person-card-name {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.person-card-item {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+
+.person-card>a {
+    color: #000000;
+    text-decoration: unset;
+}

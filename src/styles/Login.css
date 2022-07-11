@@ -1,0 +1,140 @@
+#login-container {
+    height: 100vh;
+}
+
+#login-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form>.inputField {
+    margin: 15px 0;
+}
+
+#login-form>.button-form {
+    margin: 40px 0;
+}
+
+#login-title {
+    position: absolute;
+    left: 50%;
+    top: 112px;
+    transform: translateX(-50%);
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    color: #224957;
+}
+
+#login-descr {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #757575;
+    width: 100%;
+    text-align: center;
+}
+
+#login-toSignin {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #757575;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-height:750px) {
+    #login-toSignin {
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-height:430px) {
+    #login-toSignin {
+        display: none;
+    }
+}
+
+@media screen and (max-height:800px) {
+    #login-descr {
+        top: 220px;
+    }
+}
+
+@media screen and (max-height:730px) {
+    #login-descr {
+        display: none;
+    }
+}
+
+@media screen and (max-height:630px) {
+    #login-title {
+        top: 70px;
+        font-size: 34px;
+    }
+}
+
+#login-popup-title {
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #2A1E17;
+    margin-bottom: 20px;
+}
+
+#login-popup-user {
+    margin-bottom: 20px;
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #224957;
+    text-align: left;
+}
+
+#login-popup-descr {
+    margin-bottom: 30px;
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #224957;
+}
+
+#login-popup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-popup-form>.inputField {
+    margin-bottom: 30px;
+}

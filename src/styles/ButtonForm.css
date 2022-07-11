@@ -1,0 +1,23 @@
+.button-form {
+    top: auto;
+    height: 36px;
+    background: #0D79C8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: unset;
+}
+
+.button-form:hover {
+    background: rgba(13, 121, 200, 0.7);
+}
+
+@media screen and (max-width: 450px) {
+    .button-form {
+        max-width: 80vw;
+    }
+}

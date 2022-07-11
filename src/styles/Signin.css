@@ -1,0 +1,98 @@
+#signin-container {
+    height: 100vh;
+}
+
+#signin-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signin-form>.inputField {
+    margin: 15px 0;
+}
+
+#signin-form>#signin-form-checkbox {
+    margin: 15px 0;
+}
+
+#signin-form>.button-form {
+    margin: 15px 0;
+}
+
+#signin-title {
+    position: absolute;
+    left: 50%;
+    top: 112px;
+    transform: translateX(-50%);
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    color: #224957;
+}
+
+#signin-toLogin {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #757575;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18%;
+    width: 100%;
+    text-align: center;
+}
+
+#signin-form-checkbox {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    color: #757575;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#signin-form-checkbox>label {
+    margin-left: 10px;
+}
+
+@media screen and (max-height:750px) {
+    #signin-toLogin {
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-height:670px) {
+    #signin-toLogin {
+        display: none;
+    }
+}
+
+@media screen and (max-height:715px) {
+    #signin-title {
+        top: 70px;
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    #signin-form {
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -70%);
+    }
+}

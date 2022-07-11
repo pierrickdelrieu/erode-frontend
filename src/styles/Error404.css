@@ -1,0 +1,25 @@
+#page404-container-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#page404-gif {
+    border-radius: 20px;
+    width: 30%;
+}
+
+@media screen and (max-width:700px) {
+    #page404-gif {
+        display: none;
+    }
+    #page404-img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,39 @@
+#toggleButton-rect {
+    position: relative;
+    width: 34px;
+    height: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+}
+
+#toggleButton-round {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-blend-mode: soft-light, normal;
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #E7EBF0;
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -2.5px -2.5px 10px #ECF4FF, 2.5px 2.5px 10px #353E55;
+    border-radius: 15px;
+}
+
+.toggleButton-rect-active {
+    box-shadow: inset -2.5px -2.5px 5px rgba(250, 251, 255, 0.1), inset 2.5px 2.5px 5px #366CBD;
+    background: #0D79C8;
+}
+
+.toggleButton-rect-inactive {
+    background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #CF6B0F;
+}
+
+.toggleButton-round-active {
+    right: 3px;
+    left: auto;
+}
+
+.toggleButton-round-inactive {
+    left: 3px;
+    right: auto;
+}

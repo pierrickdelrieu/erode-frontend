@@ -1,0 +1,27 @@
+#popup-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: rgba(217, 217, 217, 0.15);
+    backdrop-filter: blur(3px);
+    cursor: default;
+    opacity: 1;
+}
+
+#popup-container-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    max-height: 90%;
+    max-width: 90%;
+    height: min-content;
+    padding: 20px;
+    overflow-y: scroll;
+}

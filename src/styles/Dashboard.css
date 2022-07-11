@@ -1,0 +1,221 @@
+#dashboard-container {
+    position: absolute;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#dashboard-content {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 150px;
+    height: fit-content;
+    margin-top: 150px;
+}
+
+.dashboard-content-item {
+    width: 50vw;
+    padding: 0 4%;
+}
+
+#dashboard-writeMessage {
+    border-left: 1px solid black;
+}
+
+#dashboard-writeMessage-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#dashboard-writeMessage-title>h2 {
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #224957;
+    margin: 0;
+}
+
+#dashboard-writeMessage-title>img {
+    margin-left: 20px;
+}
+
+#dashboard-writeMessage-recipient {
+    margin-top: 30px;
+    max-width: 350px;
+    width: 80%;
+    padding: 10px;
+    border: unset;
+    border-bottom: 1px solid black;
+    background-color: unset;
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #383C3E;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#dashboard-writeMessage-recipient::placeholder {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #383C3E;
+}
+
+#dashboard-writeMessage-recipient:invalid {
+    border-bottom: 1px solid red;
+}
+
+#dashboard-writeMessage-recipient:focus {
+    outline: none;
+}
+
+#dashboard-writeMessage-time {
+    margin-bottom: 40px;
+}
+
+#dashboard-writeMessage-time>label {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #383C3E;
+}
+
+#dashboard-writeMessage-time>select {
+    /* background-color: unset; */
+    border: unset;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #000000;
+}
+
+#dashboard-writeMessage-time>select:focus {
+    outline: none;
+}
+
+#dashboard-writeMessage-message {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 160px;
+    resize: none;
+    border: unset;
+    padding: 20px;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 143%;
+    color: #383C3E;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+#dashboard-writeMessage-message:focus {
+    outline: none;
+}
+
+#dashboard-writeMessage-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:1000px) {
+    #dashboard-content {
+        margin-top: 180px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #dashboard-content {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #dashboard-writeMessage {
+        border: unset;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #dashboard-content-messages {
+        width: 90%;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#dashboard-content-messages-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#dashboard-content-messages-title>h2 {
+    font-family: 'Courier';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #224957;
+    margin: 0;
+}
+
+#dashboard-content-messages-title>img {
+    margin-left: 20px;
+}
+
+#dashboard-content-nav {
+    display: none;
+    margin-bottom: 50px;
+}
+
+#dashboard-content-nav>a {
+    margin: 0 15px;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+@media screen and (max-width:700px) {
+    #dashboard-content-nav {
+        display: block;
+    }
+}
+
+#dashboard-content-messages-nomessage {
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: #000000;
+}
