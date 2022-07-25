@@ -35,12 +35,12 @@ function App() {
                             : <Navigate replace to="/dashboard" />
                         }
                     />
-                    <Route path='/signin' element=
+                    {/* <Route path='/signin' element=
                         { token == null
                             ? <Signin setToken={setToken}/>
                             : <Navigate replace to="/dashboard" />
                         }
-                    />
+                    /> */}
                     { (token !== null)
                         ? <Route path="/dashboard" element={<Dashboard token={token}/>}/>
                         : null

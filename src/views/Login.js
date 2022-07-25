@@ -162,7 +162,8 @@ function Login({setToken}) {
 
     return (
         <div id="login-container">
-            <NavBarHome nav={"signin"} btnContent={"Sign In"}/>
+            {/* <NavBarHome nav={"signin"} btnContent={"Sign In"}/> */}
+            <NavBarHome nav={""} btnContent={"Homepage"}/>
 
             <div onClick={() => setDisplayPopup(true)} id="login-title">Login</div>
 
@@ -189,7 +190,8 @@ function Login({setToken}) {
 
             
 
-            <NavLink end to="/signin" id="login-toSignin">Do not have an account yet?</NavLink>
+            {/* <NavLink end to="/signin" id="login-toSignin">Do not have an account yet?</NavLink> */}
+            <div id="login-toSignin">Do not have an account yet? Send a email to <a href='mailto:pierrick.delrieu@efrei.net'>pierrick.delrieu@efrei.net</a></div>
 
 
             <Footer/>

@@ -19,7 +19,7 @@ function Error404() {
 
     return (
         <div id="page404-container">
-            <NavBarHome nav={""} btnContent={"Go to homepage"}/>
+            <NavBarHome nav={""} btnContent={"Homepage"}/>
 
             <div id="page404-container-content">
                 <img id="page404-img" src={error} alt="Error 404"/>

@@ -29,7 +29,7 @@ export default Loading;
 export function openLoading(setLoading, codeError) {
     setLoading(true)
     document.body.style = "overflow-y: hidden"
-    return setTimeout(closeLoading, 10000, setLoading, null, codeError);
+    return setTimeout(closeLoading, 15000, setLoading, null, codeError);
 
 }
 

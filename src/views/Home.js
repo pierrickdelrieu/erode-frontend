@@ -30,7 +30,7 @@ function Home() {
             <div id="home-first">
                 { getToken() !== null
                     ? <NavBarHome nav={"dashboard"} btnContent={"Go to Dashboard"}/>
-                    : <NavBarHome nav={"signin"} btnContent={"Sign In"}/>
+                    : <NavBarHome nav={"login"} btnContent={"Log In"}/>
                 }
 
                 <div id="home-text">
