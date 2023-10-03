@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BACK END : https://github.com/pierrickdelrieu/erode-backend
+
 
 ## Available Scripts
 
